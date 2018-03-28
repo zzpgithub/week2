@@ -13,11 +13,10 @@ public class PracticeB {
                 String[] strArr = obj.split("-");
                 result.put(strArr[0], Integer.valueOf(strArr[1]));
             }
-            if (result.containsKey(obj)) {
-                result.put(obj, result.get(obj).intValue() + 1);
-            } else {
-
-                else {
+            else{
+                if (result.containsKey(obj)) {
+                    result.put(obj, result.get(obj).intValue() + 1);
+                } else {
                     result.put(obj, 1);
                 }
             }
